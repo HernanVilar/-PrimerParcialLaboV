@@ -18,8 +18,8 @@ public class FormularioPersona extends AppCompatActivity {
     EditText Contrasenia;
     EditText NuevaContraseniUsuario;
 
-    RadioButton input_tipo_administrador;
-    RadioButton input_tipo_usuario;
+    RadioButton Administrador;
+    RadioButton Usuario;
     Button button_guardar;
 
     int posicionPersonaClickeada;
@@ -39,8 +39,8 @@ public class FormularioPersona extends AppCompatActivity {
         this.Contrasenia = findViewById(R.id.edContrasenia);
         this.NuevaContraseniUsuario = findViewById(R.id.edNuevaContrasenia);
 
-        this.input_tipo_administrador = findViewById(R.id.radioButtonOption1);
-        this.input_tipo_usuario = findViewById(R.id.radioButtonOption2);
+        this.Administrador = findViewById(R.id.radioButtonOption1);
+        this.Usuario = findViewById(R.id.radioButtonOption2);
         this.button_guardar = findViewById(R.id.boton);
         this.nombreUsuario.setText(this.ObjectoActual.getNombrePersona());
         this.Contrasenia.setText(this.ObjectoActual.getContrasenia());
@@ -51,16 +51,16 @@ public class FormularioPersona extends AppCompatActivity {
         if ("Administrador".equals(this.ObjectoActual.getTipoUsuario()))
         {
             Log.d("asda","Entro, error");
-            this.input_tipo_administrador.setChecked(true);
-            this.input_tipo_usuario.setChecked(false);
+            this.Administrador.setChecked(true);
+            this.Usuario.setChecked(false);
         }
         else
         {
-            this.input_tipo_administrador.setChecked(false);
-            this.input_tipo_usuario.setChecked(true);
+            this.Administrador.setChecked(false);
+            this.Usuario.setChecked(true);
         }
         //Log.d("das", "El valor entero es: " + Integer.toString(posicionPersonaClickeada));
-        ClickListPersona clickLstnForm = new ClickListPersona(this.posicionPersonaClickeada, this.nombreUsuario, this.Contrasenia, this.NuevaContraseniUsuario ,  this.input_tipo_administrador, this.input_tipo_usuario,this);
+        ClickListPersona clickLstnForm = new ClickListPersona(this.posicionPersonaClickeada, this.nombreUsuario, this.Contrasenia, this.NuevaContraseniUsuario ,  this.Administrador, this.Usuario,this);
         this.button_guardar.setOnClickListener(clickLstnForm);
 
     }
