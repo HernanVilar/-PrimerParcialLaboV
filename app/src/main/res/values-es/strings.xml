@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ParcialLabo</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contrasenia">Contraseña</string>
+    <string name="Repita_contrasenia">Repita la contraseña</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Administrador">Administrador</string>
+    <string name="Guardar">Guardar !!</string>
+</resources>

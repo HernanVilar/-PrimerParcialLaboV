@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ParcialLabo</string>
+    <string name="Usuario">User</string>
+    <string name="Contrasenia">Password</string>
+    <string name="Repita_contrasenia">Repeate_password</string>
+    <string name="Tipo">Type</string>
+    <string name="Administrador">Admin</string>
+    <string name="Guardar">Save</string>
+</resources>
