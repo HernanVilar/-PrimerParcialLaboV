@@ -28,7 +28,7 @@ public class ViewHolderPersona extends RecyclerView.ViewHolder implements View.O
     @Override
     public void onClick(View v) {
         Log.d("click","Se hizo click en" + super.getAbsoluteAdapterPosition());
-        //En el caso que lo haga con fila funciona bien.
+        //En el caso que lo haga con fila funciona bien. Si lo hago solo con el click de la iamgen tengo que apretar 2 veces el botón..
         //posicionElemSiendoLlamado = super.getAbsoluteAdapterPosition();
         //mainAct.abrirFormularioEdicionPersona(super.getAbsoluteAdapterPosition());
         this.imagen = this.itemView.findViewById(R.id.imagen);
